@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsywna Strona z Formularzem</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Formularz kontaktowy</h1>
+
+    <form id="kontaktForm" class="mb-5">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="imie">Imię</label>
+          <input type="text" class="form-control" id="imie" placeholder="Wpisz imię" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="nazwisko">Nazwisko</label>
+          <input type="text" class="form-control" id="nazwisko" placeholder="Wpisz nazwisko" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="text" class="form-control" id="email" placeholder="Wpisz e-mail" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Wyślij</button>
+    </form>
+
+    <div id="formularzWynik" class="alert alert-success d-none"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
